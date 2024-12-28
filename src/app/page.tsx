@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import { Navbar } from "./components/Navbar";
 import { GitHub, LinkedIn, Mail } from "@mui/icons-material";
+import TwoLevelChart from "./components/TwoLevelChart";
 
 const pages = [
   {
@@ -24,6 +25,16 @@ const pages = [
     id: 2,
     titulo: "Projetos/Aplicacoes",
     sectionId: "projeto-aplicacoes",
+  },
+  {
+    id: 3,
+    titulo: "Tecnologias",
+    sectionId: "tecnologias",
+  },
+  {
+    id: 4,
+    titulo: "Estatísticas",
+    sectionId: "estatisticas",
   },
 ];
 
@@ -79,6 +90,88 @@ const projetos = [
     link: "https://github.com/filipanselmo11/escola-app",
   },
 ];
+
+const tecnologias = [
+  {
+    id: 1,
+    image: "https://www.svgrepo.com/show/354528/vue.svg",
+  },
+  {
+    id: 2,
+    image: "https://www.svgrepo.com/show/452156/angular.svg",
+  },
+  {
+    id: 3,
+    image: "https://www.svgrepo.com/show/452092/react.svg",
+  },
+  {
+    id: 4,
+    image: "https://www.svgrepo.com/show/374144/typescript.svg",
+  },
+  {
+    id: 5,
+    image: "https://www.svgrepo.com/show/368858/nextjs.svg",
+  },
+  {
+    id: 6,
+    image: "https://www.svgrepo.com/show/303532/python-3-logo.svg",
+  },
+  {
+    id: 7,
+    image: "https://www.svgrepo.com/show/330398/express.svg",
+  },
+  {
+    id: 8,
+    image: "https://www.svgrepo.com/show/330413/fastapi.svg",
+  },
+  {
+    id: 9,
+    image: "https://www.svgrepo.com/show/378837/node.svg",
+  },
+  {
+    id: 10,
+    image: "https://www.svgrepo.com/show/372884/javascript-1.svg",
+  },
+  {
+    id: 11,
+    image: "https://www.svgrepo.com/show/452234/java.svg",
+  },
+  {
+    id: 12,
+    image: "https://www.svgrepo.com/show/354379/spring.svg",
+  },
+  {
+    id: 13,
+    image: "https://www.svgrepo.com/show/447394/html.svg",
+  },
+  {
+    id: 14,
+    image: "https://www.svgrepo.com/show/452185/css-3.svg",
+  },
+  {
+    id: 15,
+    image: "https://www.svgrepo.com/show/373554/django.svg",
+  },
+  {
+    id: 16,
+    image: "https://www.svgrepo.com/show/373788/light-solidity.svg",
+  },
+  {
+    id: 17,
+    image: "https://www.svgrepo.com/show/338985/blockchain.svg",
+  },
+];
+
+const data1 = [
+  { name: "Vue", value: 30 },
+  { name: "Typescript", value: 200 },
+  { name: "Html", value: 310 },
+  { name: "Css", value: 130 },
+];
+
+const colors = ["#FF5733", "#33FF57", "#3357FF", "#F1C40F", "#8E44AD"];
+
+// const fill1 = "#ddd";
 
 export default function Home() {
   const irPara = (link: string) => {
@@ -145,10 +238,7 @@ export default function Home() {
                   >
                     {projeto.titulo}
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{ color: "white" }}
-                  >
+                  <Typography variant="body2" sx={{ color: "white" }}>
                     {projeto.descricao}
                   </Typography>
                 </CardContent>
@@ -169,7 +259,7 @@ export default function Home() {
                     sx={{
                       textTransform: "none",
                       padding: 1,
-                      color: "#A9A9A9"
+                      color: "#A9A9A9",
                     }}
                     onClick={() => irPara(projeto.link)}
                   >
@@ -179,6 +269,64 @@ export default function Home() {
               </Card>
             ))}
           </Grid2>
+        </section>
+        <section id="tecnologias">
+          <Typography
+            variant="h4"
+            noWrap
+            sx={{
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+            style={{ marginTop: "40px" }}
+          >
+            Tecnologias que já trabalhei ou fiz projetos pessoais
+          </Typography>
+          <Grid2 container spacing={2} style={{ marginTop: "30px" }}>
+            {tecnologias.map((tecnologia) => (
+              <Card
+                sx={{ maxWidth: 345 }}
+                key={tecnologia.id}
+                style={{ backgroundColor: "#ddd" }}
+              >
+                <CardMedia
+                  sx={{ height: 200, objectFit: "cover" }}
+                  component="img"
+                  image={tecnologia.image}
+                />
+              </Card>
+            ))}
+          </Grid2>
+        </section>
+        <section
+          id="estatisticas"
+          style={{
+            width: "100%",
+            height: "300px",
+          }}
+        >
+          <Typography
+            variant="h4"
+            noWrap
+            sx={{
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+            style={{ marginTop: "40px" }}
+          >
+            Algumas estatísticas
+          </Typography>
+          <TwoLevelChart data1={data1} colors={colors}></TwoLevelChart>
         </section>
         <section id="sobre-mim">
           <Typography
