@@ -50,7 +50,7 @@ export function Navbar({ image, children }: NavbarProps) {
           </Box>
           <Box sx={{ flexGrow: 0}}>
             <IconButton sx={{ p: 0 }}>
-              <Avatar alt="Avatar image" src={image}></Avatar>
+              <Avatar alt="Avatar image" src={image} sx={{ width: 56, height: 56 }}></Avatar>
             </IconButton>
           </Box>
         </Toolbar>

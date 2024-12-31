@@ -89,6 +89,49 @@ const projetos = [
     image: "/escola-app.png",
     link: "https://github.com/filipanselmo11/escola-app",
   },
+  {
+    id: 7,
+    titulo: "Primeiro Portifólio",
+    descricao:
+      "Sistema do primeiro portifólio meu, feito com HTML, CSS e JS. Nessa época eu estava conhecendo alguns frameworks de back end e front end",
+    image: "/portifolio-antigo.png",
+    link: "https://github.com/filipanselmo11/portifolio",
+  },
+  {
+    id: 8,
+    titulo: "Novo Portifolio",
+    descricao: "Segundo portifólio, esse sistema aqui foi feito usando React e a biblioteca de componentes chamada de Chackra UI. Também utilizei Typescript nesse projeto.",
+    image: "/novo-portifolio.png",
+    link: "https://github.com/filipanselmo11/novo-portifolio",
+  },
+  {
+    id: 9,
+    titulo: "Design Patterns Ts",
+    descricao: "Projeto de padroes de projetos em Typescript, esse repo é de estudo de alguns padroes de projeto, feitos em TS. Atualmente só tem 2 exemplos de padroes neste repo.",
+    image: "/design-pattern.png",
+    link: "https://github.com/filipanselmo11/Design-Patterns-TS",
+  },
+  {
+    id: 10,
+    titulo: "Web Academy T4",
+    descricao: "Repositório com projetos/atividades do curso de capacitação da UFAM, Web Academy. Nesse repo tem projetos que vão de front end até infraestrutura.",
+    image: "/web-academy.png",
+    link: "#",
+  },
+  {
+    id: 11,
+    titulo: "Store Customers SC",
+    descricao: "Projeto de um contrato inteligente feito com a linguagem Solidity, linguagem essa que é usada para desenvolvimento de contratos inteligentes (smart contracts) que são executados em um blockchain da Rede Ethereum.",
+    image: "/store-customer-sc.png",
+    link: "https://github.com/filipanselmo11/store-customers-sc",
+  },
+  {
+    id: 12,
+    titulo: "Fighting Games Fastapi",
+    descricao: "Projeto de backend, feito como o framework Fastapi, um framework web Python. Este projeto é relacionado ao CRUD de personagens de jogos de luta, desde de jogos como Mortal Kombat até Virtua Fighter.",
+    image: "/fg-game-fastapi.png",
+    link: "https://github.com/filipanselmo11/fighting-games-fastapi",
+  },
 ];
 
 const tecnologias = [
@@ -163,13 +206,15 @@ const tecnologias = [
 ];
 
 const data1 = [
-  { name: "Vue", value: 30 },
-  { name: "Typescript", value: 200 },
-  { name: "Html", value: 310 },
-  { name: "Css", value: 130 },
+  { name: "Vue", value: 84 },
+  { name: "Typescript", value: 73 },
+  { name: "Html", value: 13 },
+  { name: "Javascript", value: 30 },
+  { name: "Python", value: 24 },
+  { name: "Java", value: 10 },
 ];
 
-const colors = ["#FF5733", "#33FF57", "#3357FF", "#F1C40F", "#8E44AD"];
+const colors = ["#FF5733", "#33FF57", "#3357FF", "#F1C40F", "#8E44AD", "#00BFFF"];
 
 // const fill1 = "#ddd";
 
@@ -307,7 +352,7 @@ export default function Home() {
           id="estatisticas"
           style={{
             width: "100%",
-            height: "300px",
+            height: "400px",
           }}
         >
           <Typography
