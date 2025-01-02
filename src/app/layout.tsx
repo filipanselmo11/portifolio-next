@@ -4,7 +4,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "../theme";
 
 const roboto = Roboto({
-  weight: ["300", "400", "500", "700", "900"],
+  weight: ["300", "400", "500", "900"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-roboto",
