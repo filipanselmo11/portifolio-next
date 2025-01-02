@@ -203,6 +203,62 @@ const tecnologias = [
     id: 17,
     image: "https://www.svgrepo.com/show/338985/blockchain.svg",
   },
+  {
+    id: 18,
+    image: "https://www.svgrepo.com/show/376365/docker.svg",
+  },
+  {
+    id: 19,
+    image: "https://www.svgrepo.com/show/374118/tailwind.svg",
+  },
+  {
+    id: 20,
+    image: "https://www.svgrepo.com/show/372804/bootstrap.svg",
+  },
+  {
+    id: 21,
+    image: "https://www.svgrepo.com/show/516636/git.svg",
+  },
+  {
+    id: 22,
+    image: "https://www.svgrepo.com/show/494343/github.svg",
+  },
+  {
+    id: 23,
+    image: "https://www.svgrepo.com/show/443537/brand-vuetify.svg",
+  },
+  {
+    id: 24,
+    image: "https://www.svgrepo.com/show/354048/material-ui.svg",
+  },
+  {
+    id: 25,
+    image: "https://www.svgrepo.com/show/342053/mysql.svg",
+  },
+  {
+    id: 26,
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    id: 27,
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularmaterial/angularmaterial-original.svg",
+  },
+  {
+    id: 28,
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastify/fastify-original.svg",
+  },
+  {
+    id: 29,
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Pinialogo.svg",
+  },
+  {
+    id: 30,
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg",
+  },
+  {
+    id: 31,
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+  },
 ];
 
 const data1 = [
@@ -330,7 +386,7 @@ export default function Home() {
             }}
             style={{ marginTop: "40px" }}
           >
-            Tecnologias que já trabalhei ou fiz projetos pessoais
+            Tecnologias
           </Typography>
           <Grid2 container spacing={2} style={{ marginTop: "30px" }}>
             {tecnologias.map((tecnologia) => (
