@@ -35,5 +35,6 @@ jobs:
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           working-directory: ./
+          args: '--prod --yes'
           github-comment: true
           github-deployment: true
