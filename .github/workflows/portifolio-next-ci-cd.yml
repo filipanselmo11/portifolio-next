@@ -12,30 +12,24 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-    # Checkout do código
     - name: Checkout Code
       uses: actions/checkout@v3
 
-    # Configurar o Node
     - name: Setup Node
       uses: actions/setup-node@v3
       with:
         node-version: 18
         cache: 'npm'
 
-    # Instalar dependências
     - name: Install Dependencies
       run: npm install
 
-    # Lint do projeto
     - name: Lint project
       run: npm run lint
 
-    # Build do projeto
     - name: Build projetc
       run: npm run build
 
-    # Deploy vercel
     - name: Deploy to vercel
       uses: amondnet/vercel-action@v20
       with:
